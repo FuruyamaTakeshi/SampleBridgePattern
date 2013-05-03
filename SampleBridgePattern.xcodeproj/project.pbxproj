@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4912BEE17335CBC00333846 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4912BED17335CBC00333846 /* UIKit.framework */; };
+		A4912BF017335CBC00333846 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4912BEF17335CBC00333846 /* Foundation.framework */; };
+		A4912BF217335CBC00333846 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4912BF117335CBC00333846 /* CoreGraphics.framework */; };
+		A4912BF817335CBC00333846 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4912BF617335CBC00333846 /* InfoPlist.strings */; };
+		A4912BFA17335CBC00333846 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4912BF917335CBC00333846 /* main.m */; };
+		A4912BFE17335CBC00333846 /* FTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4912BFD17335CBC00333846 /* FTAppDelegate.m */; };
+		A4912C0017335CBC00333846 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A4912BFF17335CBC00333846 /* Default.png */; };
+		A4912C0217335CBC00333846 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4912C0117335CBC00333846 /* Default@2x.png */; };
+		A4912C0417335CBC00333846 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4912C0317335CBC00333846 /* Default-568h@2x.png */; };
+		A4912C0717335CBC00333846 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4912C0517335CBC00333846 /* MainStoryboard_iPhone.storyboard */; };
+		A4912C0A17335CBC00333846 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4912C0817335CBC00333846 /* MainStoryboard_iPad.storyboard */; };
+		A4912C0D17335CBC00333846 /* FTMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4912C0C17335CBC00333846 /* FTMasterViewController.m */; };
+		A4912C1017335CBC00333846 /* FTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4912C0F17335CBC00333846 /* FTDetailViewController.m */; };
+		A4912C1817335CBC00333846 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4912C1717335CBC00333846 /* SenTestingKit.framework */; };
+		A4912C1917335CBC00333846 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4912BED17335CBC00333846 /* UIKit.framework */; };
+		A4912C1A17335CBC00333846 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4912BEF17335CBC00333846 /* Foundation.framework */; };
+		A4912C2217335CBC00333846 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4912C2017335CBC00333846 /* InfoPlist.strings */; };
+		A4912C2517335CBC00333846 /* SampleBridgePatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4912C2417335CBC00333846 /* SampleBridgePatternTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4912C1B17335CBC00333846 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4912BE217335CBC00333846 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4912BE917335CBC00333846;
+			remoteInfo = SampleBridgePattern;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A4912BEA17335CBC00333846 /* SampleBridgePattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleBridgePattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4912BED17335CBC00333846 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A4912BEF17335CBC00333846 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A4912BF117335CBC00333846 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A4912BF517335CBC00333846 /* SampleBridgePattern-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleBridgePattern-Info.plist"; sourceTree = "<group>"; };
+		A4912BF717335CBC00333846 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4912BF917335CBC00333846 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4912BFB17335CBC00333846 /* SampleBridgePattern-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleBridgePattern-Prefix.pch"; sourceTree = "<group>"; };
+		A4912BFC17335CBC00333846 /* FTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTAppDelegate.h; sourceTree = "<group>"; };
+		A4912BFD17335CBC00333846 /* FTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTAppDelegate.m; sourceTree = "<group>"; };
+		A4912BFF17335CBC00333846 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A4912C0117335CBC00333846 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A4912C0317335CBC00333846 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A4912C0617335CBC00333846 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		A4912C0917335CBC00333846 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		A4912C0B17335CBC00333846 /* FTMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTMasterViewController.h; sourceTree = "<group>"; };
+		A4912C0C17335CBC00333846 /* FTMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTMasterViewController.m; sourceTree = "<group>"; };
+		A4912C0E17335CBC00333846 /* FTDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTDetailViewController.h; sourceTree = "<group>"; };
+		A4912C0F17335CBC00333846 /* FTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTDetailViewController.m; sourceTree = "<group>"; };
+		A4912C1617335CBC00333846 /* SampleBridgePatternTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleBridgePatternTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4912C1717335CBC00333846 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A4912C1F17335CBC00333846 /* SampleBridgePatternTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleBridgePatternTests-Info.plist"; sourceTree = "<group>"; };
+		A4912C2117335CBC00333846 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4912C2317335CBC00333846 /* SampleBridgePatternTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleBridgePatternTests.h; sourceTree = "<group>"; };
+		A4912C2417335CBC00333846 /* SampleBridgePatternTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleBridgePatternTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4912BE717335CBC00333846 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4912BEE17335CBC00333846 /* UIKit.framework in Frameworks */,
+				A4912BF017335CBC00333846 /* Foundation.framework in Frameworks */,
+				A4912BF217335CBC00333846 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4912C1217335CBC00333846 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4912C1817335CBC00333846 /* SenTestingKit.framework in Frameworks */,
+				A4912C1917335CBC00333846 /* UIKit.framework in Frameworks */,
+				A4912C1A17335CBC00333846 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4912BE117335CBC00333846 = {
+			isa = PBXGroup;
+			children = (
+				A4912BF317335CBC00333846 /* SampleBridgePattern */,
+				A4912C1D17335CBC00333846 /* SampleBridgePatternTests */,
+				A4912BEC17335CBC00333846 /* Frameworks */,
+				A4912BEB17335CBC00333846 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4912BEB17335CBC00333846 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4912BEA17335CBC00333846 /* SampleBridgePattern.app */,
+				A4912C1617335CBC00333846 /* SampleBridgePatternTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4912BEC17335CBC00333846 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4912BED17335CBC00333846 /* UIKit.framework */,
+				A4912BEF17335CBC00333846 /* Foundation.framework */,
+				A4912BF117335CBC00333846 /* CoreGraphics.framework */,
+				A4912C1717335CBC00333846 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4912BF317335CBC00333846 /* SampleBridgePattern */ = {
+			isa = PBXGroup;
+			children = (
+				A4912BFC17335CBC00333846 /* FTAppDelegate.h */,
+				A4912BFD17335CBC00333846 /* FTAppDelegate.m */,
+				A4912C0517335CBC00333846 /* MainStoryboard_iPhone.storyboard */,
+				A4912C0817335CBC00333846 /* MainStoryboard_iPad.storyboard */,
+				A4912C0B17335CBC00333846 /* FTMasterViewController.h */,
+				A4912C0C17335CBC00333846 /* FTMasterViewController.m */,
+				A4912C0E17335CBC00333846 /* FTDetailViewController.h */,
+				A4912C0F17335CBC00333846 /* FTDetailViewController.m */,
+				A4912BF417335CBC00333846 /* Supporting Files */,
+			);
+			path = SampleBridgePattern;
+			sourceTree = "<group>";
+		};
+		A4912BF417335CBC00333846 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4912BF517335CBC00333846 /* SampleBridgePattern-Info.plist */,
+				A4912BF617335CBC00333846 /* InfoPlist.strings */,
+				A4912BF917335CBC00333846 /* main.m */,
+				A4912BFB17335CBC00333846 /* SampleBridgePattern-Prefix.pch */,
+				A4912BFF17335CBC00333846 /* Default.png */,
+				A4912C0117335CBC00333846 /* Default@2x.png */,
+				A4912C0317335CBC00333846 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4912C1D17335CBC00333846 /* SampleBridgePatternTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4912C2317335CBC00333846 /* SampleBridgePatternTests.h */,
+				A4912C2417335CBC00333846 /* SampleBridgePatternTests.m */,
+				A4912C1E17335CBC00333846 /* Supporting Files */,
+			);
+			path = SampleBridgePatternTests;
+			sourceTree = "<group>";
+		};
+		A4912C1E17335CBC00333846 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4912C1F17335CBC00333846 /* SampleBridgePatternTests-Info.plist */,
+				A4912C2017335CBC00333846 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4912BE917335CBC00333846 /* SampleBridgePattern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4912C2817335CBC00333846 /* Build configuration list for PBXNativeTarget "SampleBridgePattern" */;
+			buildPhases = (
+				A4912BE617335CBC00333846 /* Sources */,
+				A4912BE717335CBC00333846 /* Frameworks */,
+				A4912BE817335CBC00333846 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleBridgePattern;
+			productName = SampleBridgePattern;
+			productReference = A4912BEA17335CBC00333846 /* SampleBridgePattern.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4912C1517335CBC00333846 /* SampleBridgePatternTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4912C2B17335CBC00333846 /* Build configuration list for PBXNativeTarget "SampleBridgePatternTests" */;
+			buildPhases = (
+				A4912C1117335CBC00333846 /* Sources */,
+				A4912C1217335CBC00333846 /* Frameworks */,
+				A4912C1317335CBC00333846 /* Resources */,
+				A4912C1417335CBC00333846 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4912C1C17335CBC00333846 /* PBXTargetDependency */,
+			);
+			name = SampleBridgePatternTests;
+			productName = SampleBridgePatternTests;
+			productReference = A4912C1617335CBC00333846 /* SampleBridgePatternTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4912BE217335CBC00333846 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FT;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = TF;
+			};
+			buildConfigurationList = A4912BE517335CBC00333846 /* Build configuration list for PBXProject "SampleBridgePattern" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A4912BE117335CBC00333846;
+			productRefGroup = A4912BEB17335CBC00333846 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4912BE917335CBC00333846 /* SampleBridgePattern */,
+				A4912C1517335CBC00333846 /* SampleBridgePatternTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4912BE817335CBC00333846 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4912BF817335CBC00333846 /* InfoPlist.strings in Resources */,
+				A4912C0017335CBC00333846 /* Default.png in Resources */,
+				A4912C0217335CBC00333846 /* Default@2x.png in Resources */,
+				A4912C0417335CBC00333846 /* Default-568h@2x.png in Resources */,
+				A4912C0717335CBC00333846 /* MainStoryboard_iPhone.storyboard in Resources */,
+				A4912C0A17335CBC00333846 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4912C1317335CBC00333846 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4912C2217335CBC00333846 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4912C1417335CBC00333846 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4912BE617335CBC00333846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4912BFA17335CBC00333846 /* main.m in Sources */,
+				A4912BFE17335CBC00333846 /* FTAppDelegate.m in Sources */,
+				A4912C0D17335CBC00333846 /* FTMasterViewController.m in Sources */,
+				A4912C1017335CBC00333846 /* FTDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4912C1117335CBC00333846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4912C2517335CBC00333846 /* SampleBridgePatternTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4912C1C17335CBC00333846 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4912BE917335CBC00333846 /* SampleBridgePattern */;
+			targetProxy = A4912C1B17335CBC00333846 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4912BF617335CBC00333846 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4912BF717335CBC00333846 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A4912C0517335CBC00333846 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4912C0617335CBC00333846 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A4912C0817335CBC00333846 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4912C0917335CBC00333846 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		A4912C2017335CBC00333846 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4912C2117335CBC00333846 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4912C2617335CBC00333846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4912C2717335CBC00333846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4912C2917335CBC00333846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleBridgePattern/SampleBridgePattern-Prefix.pch";
+				INFOPLIST_FILE = "SampleBridgePattern/SampleBridgePattern-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A4912C2A17335CBC00333846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleBridgePattern/SampleBridgePattern-Prefix.pch";
+				INFOPLIST_FILE = "SampleBridgePattern/SampleBridgePattern-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A4912C2C17335CBC00333846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SampleBridgePattern.app/SampleBridgePattern";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleBridgePattern/SampleBridgePattern-Prefix.pch";
+				INFOPLIST_FILE = "SampleBridgePatternTests/SampleBridgePatternTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A4912C2D17335CBC00333846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SampleBridgePattern.app/SampleBridgePattern";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleBridgePattern/SampleBridgePattern-Prefix.pch";
+				INFOPLIST_FILE = "SampleBridgePatternTests/SampleBridgePatternTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4912BE517335CBC00333846 /* Build configuration list for PBXProject "SampleBridgePattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4912C2617335CBC00333846 /* Debug */,
+				A4912C2717335CBC00333846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4912C2817335CBC00333846 /* Build configuration list for PBXNativeTarget "SampleBridgePattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4912C2917335CBC00333846 /* Debug */,
+				A4912C2A17335CBC00333846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A4912C2B17335CBC00333846 /* Build configuration list for PBXNativeTarget "SampleBridgePatternTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4912C2C17335CBC00333846 /* Debug */,
+				A4912C2D17335CBC00333846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4912BE217335CBC00333846 /* Project object */;
+}
