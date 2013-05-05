@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="11G63b" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="APData" representedClassName="APData" isAbstract="YES" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="list" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="APDataList" inverseName="account" inverseEntity="APDataList" syncable="YES"/>
+    </entity>
+    <entity name="APDataList" representedClassName="APDataList" parentEntity="APData" syncable="YES">
+        <relationship name="account" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="APUserAccount" inverseName="lists" inverseEntity="APUserAccount" syncable="YES"/>
+        <relationship name="datas" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="APData" inverseName="list" inverseEntity="APData" syncable="YES"/>
+    </entity>
+    <entity name="APFund" representedClassName="APFund" parentEntity="APProduct" syncable="YES"/>
+    <entity name="APHistory" representedClassName="APHistory" parentEntity="APDataList" syncable="YES"/>
+    <entity name="APImageData" representedClassName="APImageData" parentEntity="APData" syncable="YES">
+        <attribute name="image" optional="YES" transient="YES" syncable="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="product" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="APProduct" inverseName="images" inverseEntity="APProduct" syncable="YES"/>
+    </entity>
+    <entity name="APProduct" representedClassName="APProduct" parentEntity="APData" syncable="YES">
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="APImageData" inverseName="product" inverseEntity="APImageData" syncable="YES"/>
+    </entity>
+    <entity name="APUserAccount" representedClassName="APUserAccount" parentEntity="APData" syncable="YES">
+        <relationship name="lists" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="APDataList" inverseName="account" inverseEntity="APDataList" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="APData" positionX="133" positionY="-129" width="128" height="120"/>
+        <element name="APDataList" positionX="-65" positionY="-96" width="128" height="75"/>
+        <element name="APFund" positionX="135" positionY="144" width="128" height="45"/>
+        <element name="APHistory" positionX="-63" positionY="27" width="128" height="45"/>
+        <element name="APImageData" positionX="313" positionY="54" width="128" height="90"/>
+        <element name="APProduct" positionX="133" positionY="45" width="128" height="60"/>
+        <element name="APUserAccount" positionX="-74" positionY="-240" width="128" height="60"/>
+    </elements>
+</model>

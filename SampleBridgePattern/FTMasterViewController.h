@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @class FTDetailViewController;
+@class FTUserAccountManager;
 
 @interface FTMasterViewController : UITableViewController
 
 @property (strong, nonatomic) FTDetailViewController *detailViewController;
-
+@property (strong, nonatomic) FTUserAccountManager *accountManager;
 @end

@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FTDetailViewController : UIViewController <UISplitViewControllerDelegate>
+@interface FTDetailViewController : UIViewController <UISplitViewControllerDelegate, UITableViewDataSource, UITableViewDelegate>
 
+@property (retain, nonatomic) IBOutlet UILabel *userAccontNameLabel;
 @property (strong, nonatomic) id detailItem;
+@property (retain, nonatomic) IBOutlet UILabel *historyNameLabel;
 
 @property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (retain, nonatomic) IBOutlet UILabel *dateLabel;
+@property (retain, nonatomic) IBOutlet UILabel *idLabel;
+
+@property (strong, nonatomic) NSMutableArray *dataSource;
 
 @end

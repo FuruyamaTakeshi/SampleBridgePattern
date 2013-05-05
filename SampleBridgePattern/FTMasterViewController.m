@@ -9,6 +9,11 @@
 #import "FTMasterViewController.h"
 
 #import "FTDetailViewController.h"
+#import "RCUtility.h"
+#import "FTUserAccountManager.h"
+#import "APUserAccount.h"
+#import "APDataList.h"
+#import "APFund.h"
 
 @interface FTMasterViewController () {
     NSMutableArray *_objects;
@@ -42,6 +47,14 @@
     UIBarButtonItem *addButton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)] autorelease];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (FTDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    FTUserAccountManager  *accountManger = [[FTUserAccountManager alloc] init];
+    self.accountManager = accountManger;
+    NSArray *array = [accountManger sortedAccounts];
+    if (!_objects) {
+        _objects = [[NSMutableArray alloc] initWithCapacity:0];
+    }
+    [_objects addObjectsFromArray:array];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,7 +68,33 @@
     if (!_objects) {
         _objects = [[NSMutableArray alloc] init];
     }
-    [_objects insertObject:[NSDate date] atIndex:0];
+    
+    APUserAccount* account = [self.accountManager insertNewAccount];
+    account.type = @"account";
+    account.createDate = [NSDate date];
+    NSString * accountId = [RCUtility uuid];
+    account.name = [NSString stringWithFormat:@"%@%@", [RCUtility randamName], [accountId substringToIndex:5]];
+    account.identifier = accountId;
+    APDataList* history =  [self.accountManager insertNewhistory];
+    history.identifier = [RCUtility uuid];
+    history.name = [history.identifier substringToIndex:5];
+    history.type = @"history";
+    [account addListsObject:history];
+    int randamValue = rand() % 10;
+    randamValue = (randamValue==0)?1:randamValue;
+    
+    for (int i = 0; i < randamValue; i++) {
+        APFund * fund =  [self.accountManager insertNewFund];
+        accountId = [RCUtility uuid];
+        fund.name = [NSString stringWithFormat:@"%@%@", [RCUtility randamName], [accountId substringToIndex:5]];
+        fund.identifier = accountId;
+        fund.type = @"fund";
+        [history addDatasObject:fund];
+    }
+    [self.accountManager save];
+    [_objects insertObject:account atIndex:0];
+    NSLog(@"%@", [account description]);
+    
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
@@ -76,8 +115,12 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    APUserAccount *object = _objects[indexPath.row];
+    NSArray *histories = [object.lists allObjects];
+    APDataList *history = [histories objectAtIndex:0];
+    NSArray *funds = [[history datas] allObjects];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@:%d", object.name, [funds count]];
     return cell;
 }
 
@@ -125,7 +168,7 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
+        APUserAccount *object = _objects[indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
     }
 }
