@@ -10,15 +10,17 @@
 #import "FTDataManaging.h"
 @class FTDataBaseManager;
 /**
- * @brief 管理クラス
+ * @brief データ管理クラス GoF Brigdge Pattern Abstruct
  * @author T.Furuyama
  */
 @interface FTDataManager : NSObject
 {
     FTDataBaseManager *_dataBaseManager;
 }
+
++ (id)sharedManager;
 /**
- * @brief クラスメソッド
+ * @brief メソッド
  * @return インスタンス
  */
 - (FTDataBaseManager *)dataBaseManager;

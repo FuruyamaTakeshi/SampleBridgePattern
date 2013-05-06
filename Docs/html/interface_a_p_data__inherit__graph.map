@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$interface_a_p_data_list.html" title="APDataList" alt="" coords="5,83,93,111"/>
+<area shape="rect" id="node7" href="$interface_a_p_image_data.html" title="APImageData" alt="" coords="117,83,221,111"/>
+<area shape="rect" id="node9" href="$interface_a_p_product.html" title="APProduct" alt="" coords="245,83,329,111"/>
+<area shape="rect" id="node13" href="$interface_a_p_user_account.html" title="APUserAccount" alt="" coords="354,83,469,111"/>
+<area shape="rect" id="node5" href="$interface_a_p_history.html" title="APHistory" alt="" coords="9,161,89,189"/>
+<area shape="rect" id="node11" href="$interface_a_p_fund.html" title="APFund" alt="" coords="253,161,323,189"/>
+</map>

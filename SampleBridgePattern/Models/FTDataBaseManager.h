@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "FTDataManaging.h"
 /**
- * @brief 管理クラス
+ * @brief データアクセスクラス GoF Brigdge Pattern Implement(抽象クラス）
  * @author T.Furuyama
  */
 @interface FTDataBaseManager : NSObject <FTDataManaging>

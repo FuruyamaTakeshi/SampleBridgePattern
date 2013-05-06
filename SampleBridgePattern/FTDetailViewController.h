@@ -16,7 +16,9 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @property (retain, nonatomic) IBOutlet UILabel *dateLabel;
+- (IBAction)checkButtonDidPush:(id)sender;
 @property (retain, nonatomic) IBOutlet UILabel *idLabel;
+@property (retain, nonatomic) IBOutlet UIButton *checkButton;
 
 @property (strong, nonatomic) NSMutableArray *dataSource;
 

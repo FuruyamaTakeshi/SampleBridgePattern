@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$interface_f_t_data_base_manager.html" title="管理クラス" alt="" coords="4,83,152,111"/>
+<area shape="rect" id="node7" href="$interface_f_t_data_list_manager.html" title="ユーザー管理クラス(Singletonモデル）" alt="" coords="177,83,316,111"/>
+<area shape="rect" id="node5" href="$interface_f_t_core_data_manager.html" title="管理クラス" alt="" coords="5,161,152,189"/>
+</map>

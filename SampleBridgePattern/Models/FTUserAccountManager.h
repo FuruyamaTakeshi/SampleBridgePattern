@@ -8,7 +8,7 @@
 
 #import "FTDataManager.h"
 /**
- * @brief 管理クラス
+ * @brief データ管理クラス GoF Brigdge Pattern Refined Abstruct
  * @author T.Furuyama
  */
 @interface FTUserAccountManager : FTDataManager

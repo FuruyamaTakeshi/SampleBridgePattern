@@ -7,6 +7,8 @@
 //
 
 #import "FTDetailViewController.h"
+
+#import "FTUserAccountManager.h"
 #import "RCUtility.h"
 #import "APUserAccount.h"
 #import "APDataList.h"
@@ -29,6 +31,7 @@
     [_idLabel release];
     [_historyNameLabel release];
     [_userAccontNameLabel release];
+    [_checkButton release];
     [super dealloc];
 }
 
@@ -121,4 +124,14 @@
     return cell;
 }
 
+- (IBAction)checkButtonDidPush:(id)sender {
+    LOG_METHOD
+    APUserAccount *account = (APUserAccount *)self.detailItem;
+    NSArray *histories = [account.lists allObjects];
+    APDataList *history = [histories objectAtIndex:0];
+    APFund *fund = [[FTUserAccountManager sharedManager] insertNewFund];
+    fund.name = [NSString stringWithFormat:@"a[ %@", [RCUtility randamName]];
+    [history addDatasObject:fund];
+    [[FTUserAccountManager sharedManager] update];
+}
 @end

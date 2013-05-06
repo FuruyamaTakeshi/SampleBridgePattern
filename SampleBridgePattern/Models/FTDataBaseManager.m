@@ -25,6 +25,10 @@ static id _instance = nil;
     return nil;
 }
 
+- (void)deleteContent:(id)content
+{
+    
+}
 - (void)save
 {
     

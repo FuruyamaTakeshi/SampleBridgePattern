@@ -109,34 +109,50 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="L3v-Bn-Sn8">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="312" id="o7C-g2-L1P"/>
+                                    <constraint firstAttribute="height" constant="285" id="btn-WC-FjV"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="21" id="0EN-9R-1de"/>
                                     <outlet property="delegate" destination="21" id="15D-Oo-Zfz"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzU-il-inV">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkButtonDidPush:" destination="21" eventType="touchUpInside" id="hzc-FG-JDi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qIn-mR-sKM" firstAttribute="trailing" secondItem="s0v-KG-lZS" secondAttribute="trailing" type="default" id="2Za-7j-7DD"/>
                             <constraint firstItem="s0v-KG-lZS" firstAttribute="top" secondItem="22" secondAttribute="top" constant="130" id="Cn3-nC-QcI"/>
-                            <constraint firstItem="L3v-Bn-Sn8" firstAttribute="centerX" secondItem="nUC-QR-Lhb" secondAttribute="centerX" type="default" id="LjY-3G-kSx"/>
                             <constraint firstItem="s0v-KG-lZS" firstAttribute="leading" secondItem="qIn-mR-sKM" secondAttribute="leading" type="default" id="Mdm-ED-u2m"/>
                             <constraint firstItem="qIn-mR-sKM" firstAttribute="top" secondItem="27" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Pxh-YF-oj5"/>
                             <constraint firstItem="27" firstAttribute="top" secondItem="22" secondAttribute="top" constant="70" id="S0v-oc-aYd"/>
                             <constraint firstItem="qIn-mR-sKM" firstAttribute="leading" secondItem="22" secondAttribute="leading" constant="9" id="Ttg-42-uUs"/>
+                            <constraint firstItem="uzU-il-inV" firstAttribute="centerX" secondItem="L3v-Bn-Sn8" secondAttribute="centerX" type="default" id="Wfa-Rh-KOo"/>
                             <constraint firstItem="tw4-lI-1oi" firstAttribute="top" secondItem="22" secondAttribute="top" constant="5" id="XxW-4U-C4i"/>
                             <constraint firstItem="qIn-mR-sKM" firstAttribute="centerX" secondItem="27" secondAttribute="centerX" type="default" id="aDg-dI-sz8"/>
+                            <constraint firstItem="uzU-il-inV" firstAttribute="centerX" secondItem="nUC-QR-Lhb" secondAttribute="centerX" type="default" id="aLG-NB-80I"/>
                             <constraint firstItem="L3v-Bn-Sn8" firstAttribute="bottom" secondItem="22" secondAttribute="bottom" type="default" id="ex3-Dd-8qx"/>
                             <constraint firstItem="L3v-Bn-Sn8" firstAttribute="leading" secondItem="22" secondAttribute="leading" type="default" id="h5o-ti-GtM"/>
                             <constraint firstItem="nUC-QR-Lhb" firstAttribute="top" secondItem="tw4-lI-1oi" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="lU7-o3-oaz"/>
+                            <constraint firstItem="uzU-il-inV" firstAttribute="top" secondItem="22" secondAttribute="top" constant="159" id="lsR-n0-Ieb"/>
                             <constraint firstItem="L3v-Bn-Sn8" firstAttribute="trailing" secondItem="22" secondAttribute="trailing" type="default" id="yjg-sG-irt"/>
                             <constraint firstItem="tw4-lI-1oi" firstAttribute="centerX" secondItem="nUC-QR-Lhb" secondAttribute="centerX" type="default" id="zli-on-vEf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="UserAccount" id="26"/>
                     <connections>
+                        <outlet property="checkButton" destination="uzU-il-inV" id="Qhf-7Y-mND"/>
                         <outlet property="dateLabel" destination="qIn-mR-sKM" id="9wY-ch-EI6"/>
                         <outlet property="detailDescriptionLabel" destination="27" id="28"/>
                         <outlet property="historyNameLabel" destination="nUC-QR-Lhb" id="sQj-j7-7LL"/>
@@ -149,24 +165,6 @@
             <point key="canvasLocation" x="902" y="64"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="FTDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FTDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="historyNameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="idLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="userAccontNameLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="FTMasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FTMasterViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

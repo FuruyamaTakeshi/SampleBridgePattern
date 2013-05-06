@@ -47,14 +47,24 @@
     UIBarButtonItem *addButton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)] autorelease];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (FTDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
-    FTUserAccountManager  *accountManger = [[FTUserAccountManager alloc] init];
+    FTUserAccountManager  *accountManger = [FTUserAccountManager sharedManager];
     self.accountManager = accountManger;
-    NSArray *array = [accountManger sortedAccounts];
+//    NSArray *array = [accountManger sortedAccounts];
+//    if (!_objects) {
+//        _objects = [[NSMutableArray alloc] initWithCapacity:0];
+//    }
+//    [_objects addObjectsFromArray:array];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    NSArray *array = [self.accountManager sortedAccounts];
     if (!_objects) {
         _objects = [[NSMutableArray alloc] initWithCapacity:0];
     }
     [_objects addObjectsFromArray:array];
-    
 }
 
 - (void)didReceiveMemoryWarning

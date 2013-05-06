@@ -10,6 +10,18 @@
 #import "FTDataBaseManagerFactory.h"
 
 @implementation FTDataManager
+static id _manager = nil;
+
++ (id)sharedManager
+{
+    LOG_METHOD
+    @synchronized(self) {
+        if (!_manager) {
+            _manager = [[self alloc] init];
+        }
+        return _manager;
+    }
+}
 - (FTDataBaseManager *)dataBaseManager
 {
     LOG_METHOD

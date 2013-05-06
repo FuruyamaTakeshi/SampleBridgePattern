@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 /**
- * @brief Abstract Factoryクラス
+ * @brief Abstract Factoryクラス　Implementクラスのインスタンスを生成する
  * @author T.Furuyama
  */
 @interface FTDataBaseManagerFactory : NSObject
